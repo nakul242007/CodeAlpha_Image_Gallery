@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakul's Gallery Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <h1>Nakul's Gallery Space</h1>
+        <p>Frontend Internship - CodeAlpha Project 1</p>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="sortItems('all')">All</button>
+            <button class="filter-btn" onclick="sortItems('nature')">Nature</button>
+            <button class="filter-btn" onclick="sortItems('city')">City</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeBox()">&times;</span>
+        <button class="prev-btn" onclick="moveImg(-1)">&#10094;</button>
+        <img id="lightbox-img" src="" alt="Gallery Image">
+        <button class="next-btn" onclick="moveImg(1)">&#10095;</button>
+        <div id="image-counter" class="image-counter">1 / 6</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
